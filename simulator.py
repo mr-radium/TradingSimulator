@@ -48,4 +48,4 @@ if "ls" in task:
         sym_search(keywords)
     except:
         print("Something might be wrong!")
-        print("Please check your internet connection and try again")
+        print("Please check your internet connection and try again.")
