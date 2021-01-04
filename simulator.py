@@ -44,7 +44,7 @@ task = input("What do you want to do: ")
 
 if "ls" in task:
    try:
-        keywords = input("Enter the Keywords: ")
+        keywords = task.replace("ls ", "")
         sym_search(keywords)
    except:
         print("Something might be wrong!")
