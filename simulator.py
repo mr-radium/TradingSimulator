@@ -1,11 +1,6 @@
 import requests
 import json
 
-# res = requests.get('https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=BAC&interval=5min&apikey=FLB281YD66I569JV')
-# print(res.text)
-
-
-
 
 def print_data(times):
 
@@ -48,9 +43,9 @@ def sym_search(keywords):
 task = input("What do you want to do: ")
 
 if "ls" in task:
-#    try:
+   try:
         keywords = input("Enter the Keywords: ")
         sym_search(keywords)
-#    except:
-        # print("Something might be wrong!")
-        # print("Please check your internet connection and try again.")
+   except:
+        print("Something might be wrong!")
+        print("Please check your internet connection and try again.")
