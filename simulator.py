@@ -1,51 +1,18 @@
-import requests
-import json
+# Importing the functions from the symbol_seacher file
+from symbol_searcher import sym_search
+from symbol_searcher import print_data
 
 
-def print_data(times):
+if __name__ == "__main__":
+    task = input("Enter you request: ")
+    
+# If "ls" in task it would do symbol searching
+    if "ls" in task:
 
-    # Printing the Data in Formal Form
-    print('')
-    print("Symbol: " + data["bestMatches"][times]["1. symbol"])
-    print("Name: " + data["bestMatches"][times]["2. name"])
-    print("Type: " + data["bestMatches"][times]["3. type"])
-    print("Region: " + data["bestMatches"][times]["4. region"])
-    print("Market Open: " + data["bestMatches"][times]["5. marketOpen"])
-    print("Market Close: " + data["bestMatches"][times]["6. marketClose"])
-    print("TimeZone: " + data["bestMatches"][times]["7. timezone"])
-    print("Currency: " + data["bestMatches"][times]["8. currency"])
-    print("Match Score: "  + data["bestMatches"][times]["9. matchScore"])
-
-def sym_search(keywords):
-    # Fetching Request Message
-    print("Please wait while we are fetching your request...")
-
-    # Requesting Data
-    res = requests.get('https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=' + keywords + '&apikey=FLB281YD66I569JV')
-
-    # Converting Data to JSON
-    global data
-    data = json.loads(res.text)
-
-    # Number of Results
-    global results
-    results = len(data["bestMatches"])
-
-    print("")
-    print("There are "  + str(results) + " best macthes for yor request!")
-
-    i = 0
-    while i < results:
-        print_data(i)
-        i += 1
-
-
-task = input("What do you want to do: ")
-
-if "ls" in task:
-   try:
-        keywords = task.replace("ls ", "")
-        sym_search(keywords)
-   except:
-        print("Something might be wrong!")
-        print("Please check your internet connection and try again.")
+        try:
+                keywords = task.replace("ls ", "")
+                sym_search(keywords)
+        except:
+                print("Something might be wrong!")
+                print("Please check your internet connection and try again.")
+                
