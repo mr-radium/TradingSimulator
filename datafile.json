@@ -1,114 +1,114 @@
 {
     "bestMatches": [
         {
-            "1. symbol": "500493.BSE",
-            "2. name": "Bharat Forge Limited",
-            "3. type": "Equity",
-            "4. region": "India/Bombay",
-            "5. marketOpen": "09:15",
-            "6. marketClose": "15:30",
-            "7. timezone": "UTC+5.5",
-            "8. currency": "INR",
-            "9. matchScore": "0.4615"
+            "1. symbol": "LSAF",
+            "2. name": "LeaderShares AlphaFactor US Core Equity ETF",
+            "3. type": "ETF",
+            "4. region": "United States",
+            "5. marketOpen": "09:30",
+            "6. marketClose": "16:00",
+            "7. timezone": "UTC-05",
+            "8. currency": "USD",
+            "9. matchScore": "0.6667"
         },
         {
-            "1. symbol": "503960.BSE",
-            "2. name": "Bharat Bijlee Limited",
+            "1. symbol": "LS.TRT",
+            "2. name": "Middlefield Healthcare &amp; Life Sciences ETF",
+            "3. type": "ETF",
+            "4. region": "Toronto",
+            "5. marketOpen": "09:30",
+            "6. marketClose": "16:00",
+            "7. timezone": "UTC-05",
+            "8. currency": "CAD",
+            "9. matchScore": "0.5714"
+        },
+        {
+            "1. symbol": "LS2.FRK",
+            "2. name": "LSI Industries Inc",
             "3. type": "Equity",
-            "4. region": "India/Bombay",
-            "5. marketOpen": "09:15",
-            "6. marketClose": "15:30",
-            "7. timezone": "UTC+5.5",
-            "8. currency": "INR",
+            "4. region": "Frankfurt",
+            "5. marketOpen": "08:00",
+            "6. marketClose": "20:00",
+            "7. timezone": "UTC+01",
+            "8. currency": "EUR",
+            "9. matchScore": "0.5714"
+        },
+        {
+            "1. symbol": "LS3.FRK",
+            "2. name": "LSB Industries",
+            "3. type": "Equity",
+            "4. region": "Frankfurt",
+            "5. marketOpen": "08:00",
+            "6. marketClose": "20:00",
+            "7. timezone": "UTC+01",
+            "8. currency": "EUR",
+            "9. matchScore": "0.5714"
+        },
+        {
+            "1. symbol": "LSABX",
+            "2. name": "Loomis Sayles Core Disciplined Alpha Bon",
+            "3. type": "Mutual Fund",
+            "4. region": "United States",
+            "5. marketOpen": "09:30",
+            "6. marketClose": "16:00",
+            "7. timezone": "UTC-05",
+            "8. currency": "USD",
+            "9. matchScore": "0.5714"
+        },
+        {
+            "1. symbol": "LS4C.FRK",
+            "2. name": "London Stock Exchange Group plc",
+            "3. type": "Equity",
+            "4. region": "Frankfurt",
+            "5. marketOpen": "08:00",
+            "6. marketClose": "20:00",
+            "7. timezone": "UTC+01",
+            "8. currency": "EUR",
+            "9. matchScore": "0.5000"
+        },
+        {
+            "1. symbol": "LSAA.LON",
+            "2. name": "Life Settlement Assets A",
+            "3. type": "Equity",
+            "4. region": "United Kingdom",
+            "5. marketOpen": "08:00",
+            "6. marketClose": "16:30",
+            "7. timezone": "UTC+00",
+            "8. currency": "GBP",
+            "9. matchScore": "0.5000"
+        },
+        {
+            "1. symbol": "LSAB.LON",
+            "2. name": "Life Settlement Assets B",
+            "3. type": "Equity",
+            "4. region": "United Kingdom",
+            "5. marketOpen": "08:00",
+            "6. marketClose": "16:30",
+            "7. timezone": "UTC+00",
+            "8. currency": "GBP",
+            "9. matchScore": "0.5000"
+        },
+        {
+            "1. symbol": "LSAF.FRK",
+            "2. name": "Lyxor MSCI South Africa UCITS ETF Acc",
+            "3. type": "ETF",
+            "4. region": "Frankfurt",
+            "5. marketOpen": "08:00",
+            "6. marketClose": "20:00",
+            "7. timezone": "UTC+01",
+            "8. currency": "EUR",
+            "9. matchScore": "0.5000"
+        },
+        {
+            "1. symbol": "LSAF.DEX",
+            "2. name": "Lyxor MSCI South Africa UCITS ETF Acc",
+            "3. type": "ETF",
+            "4. region": "XETRA",
+            "5. marketOpen": "08:00",
+            "6. marketClose": "20:00",
+            "7. timezone": "UTC+01",
+            "8. currency": "EUR",
             "9. matchScore": "0.4444"
-        },
-        {
-            "1. symbol": "541143.BSE",
-            "2. name": "Bharat Dynamics Limited",
-            "3. type": "Equity",
-            "4. region": "India/Bombay",
-            "5. marketOpen": "09:15",
-            "6. marketClose": "15:30",
-            "7. timezone": "UTC+5.5",
-            "8. currency": "INR",
-            "9. matchScore": "0.4138"
-        },
-        {
-            "1. symbol": "500049.BSE",
-            "2. name": "Bharat Electronics Limited",
-            "3. type": "Equity",
-            "4. region": "India/Bombay",
-            "5. marketOpen": "09:15",
-            "6. marketClose": "15:30",
-            "7. timezone": "UTC+5.5",
-            "8. currency": "INR",
-            "9. matchScore": "0.3750"
-        },
-        {
-            "1. symbol": "541096.BSE",
-            "2. name": "Bharat Parenterals Limited",
-            "3. type": "Equity",
-            "4. region": "India/Bombay",
-            "5. marketOpen": "09:15",
-            "6. marketClose": "15:30",
-            "7. timezone": "UTC+5.5",
-            "8. currency": "INR",
-            "9. matchScore": "0.3750"
-        },
-        {
-            "1. symbol": "500103.BSE",
-            "2. name": "Bharat Heavy Electricals Limited",
-            "3. type": "Equity",
-            "4. region": "India/Bombay",
-            "5. marketOpen": "09:15",
-            "6. marketClose": "15:30",
-            "7. timezone": "UTC+5.5",
-            "8. currency": "INR",
-            "9. matchScore": "0.3158"
-        },
-        {
-            "1. symbol": "531862.BSE",
-            "2. name": "Bharat Agri Fert and Realty Limited",
-            "3. type": "Equity",
-            "4. region": "India/Bombay",
-            "5. marketOpen": "09:15",
-            "6. marketClose": "15:30",
-            "7. timezone": "UTC+5.5",
-            "8. currency": "INR",
-            "9. matchScore": "0.2927"
-        },
-        {
-            "1. symbol": "500547.BSE",
-            "2. name": "Bharat Petroleum Corporation Limited",
-            "3. type": "Equity",
-            "4. region": "India/Bombay",
-            "5. marketOpen": "09:15",
-            "6. marketClose": "15:30",
-            "7. timezone": "UTC+5.5",
-            "8. currency": "INR",
-            "9. matchScore": "0.2857"
-        },
-        {
-            "1. symbol": "511501.BSE",
-            "2. name": "Bharat Bhushan Finance & Commodity Brokers Limited",
-            "3. type": "Equity",
-            "4. region": "India/Bombay",
-            "5. marketOpen": "09:15",
-            "6. marketClose": "15:30",
-            "7. timezone": "UTC+5.5",
-            "8. currency": "INR",
-            "9. matchScore": "0.2143"
-        },
-        {
-            "1. symbol": "524663.BSE",
-            "2. name": "Bharat Immunologicals & Biologicals Corporation Limited",
-            "3. type": "Equity",
-            "4. region": "India/Bombay",
-            "5. marketOpen": "09:15",
-            "6. marketClose": "15:30",
-            "7. timezone": "UTC+5.5",
-            "8. currency": "INR",
-            "9. matchScore": "0.1967"
         }
     ]
 }

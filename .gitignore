@@ -1,3 +1,6 @@
 # This file is not mandatory
 # And not very much related to the Project
 datafile.json
+
+# This file is made for testing of the API
+tests.py
