@@ -3,6 +3,7 @@ import os
 from symbol_searcher import sym_search
 from symbol_searcher import print_data
 from get_current_stock_data import get_current_stock_data_nse
+from buy_stock import buy_stock
 
 
 if __name__ == "__main__":
@@ -36,3 +37,7 @@ if __name__ == "__main__":
         except:
             print("Something might be wrong!")
             print("Please check your internet connection and try again.")
+
+    if "buy" in task:
+        stock = task.replace("buy ", "")
+        buy_stock(stock)

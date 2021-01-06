@@ -5,7 +5,9 @@ import json
 
 def get_current_stock_data_nse(stock):
 
-    print("Please wait while we are fetching your request.")
+    stock = stock.upper()
+
+    print("Please wait while we are fetching your request...")
 
     # If there's "&" symbol in the the stocky symbol it will replace it with "%26"
     if "&" in stock:

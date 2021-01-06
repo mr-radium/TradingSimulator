@@ -1,0 +1,15 @@
+{
+    "username": "Mr. Radium",
+    "current-balence": "1000000",
+    "trades": [
+        {
+            "trade-id": "0",
+            "trade-status": "buy",
+            "trade-company": "ONGC",
+            "trade-price": "100",
+            "trade-quantity": "10",
+            "total-trade-price": "1000" 
+        }
+    ]
+    
+}
