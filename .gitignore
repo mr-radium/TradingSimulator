@@ -1,0 +1,6 @@
+# Cache Data
+__pycache__/
+.idea/
+
+# json file for test purposes
+test.json
