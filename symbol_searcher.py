@@ -6,22 +6,22 @@ def print_data(times):
 
     # Printing the Data in Formal Form
     print('')
-    print("Symbol: " + data["bestMatches"][times]["1. symbol"])
-    print("Name: " + data["bestMatches"][times]["2. name"])
-    print("Type: " + data["bestMatches"][times]["3. type"])
-    print("Region: " + data["bestMatches"][times]["4. region"])
-    print("Market Open: " + data["bestMatches"][times]["5. marketOpen"])
-    print("Market Close: " + data["bestMatches"][times]["6. marketClose"])
-    print("TimeZone: " + data["bestMatches"][times]["7. timezone"])
-    print("Currency: " + data["bestMatches"][times]["8. currency"])
-    print("Match Score: "  + data["bestMatches"][times]["9. matchScore"])
+    print("Name: " + data[times]["name"])
+    print("Symbol: " + data[times]["symbol"])
 
 def sym_search(keywords):
+
+    if "&" in keywords:
+        keywords = keywords.replace("&", "%26")
+    
+    if " " in keywords:
+        keywords = keywords.replace(" ", "%20")
+        
     # Fetching Request Message
     print("Please wait while we are fetching your request...")
 
     # Requesting Data
-    res = requests.get('https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=' + keywords + '&apikey=FLB281YD66I569JV')
+    res = requests.get('http://localhost:3000/nse/search_stocks?keyword=' + keywords)
 
     # Converting Data to JSON
     global data
@@ -29,7 +29,7 @@ def sym_search(keywords):
 
     # Number of Results
     global results
-    results = len(data["bestMatches"])
+    results = len(data)
 
     # This is for telling the user the number of results
     print("")
