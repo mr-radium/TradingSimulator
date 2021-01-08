@@ -2,6 +2,6 @@
 __pycache__/
 .idea/
 
-# json file for test purposes
+# Files for test purposes
 test.json
-test2.json
+notes.txt
