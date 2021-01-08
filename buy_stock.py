@@ -24,7 +24,3 @@ def buy_stock(stock):
     profile_edit.write(json.dumps(profile_data, indent = 4))
 
     trades_len = len(profile_data["trades"])
-    new_trade = profile_data
-    profile_data.update()
-    profile_edit.write(json.dumps(profile_data, indent = 4))
-    profile_edit.close()
