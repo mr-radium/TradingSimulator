@@ -39,5 +39,7 @@ if __name__ == "__main__":
             print("Please check your internet connection and try again.")
 
     if "buy" in task:
-        stock = task.replace("buy ", "")
-        buy_stock(stock)
+        arranged_task = task.split()
+        stock = arranged_task[1]
+        quantity = arranged_task[2].replace("-", "")
+        buy_stock(stock, quantity)

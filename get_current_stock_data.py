@@ -34,7 +34,7 @@ def get_current_stock_data_nse(stock):
         print("")
         print("Current Price: " + stock_info["data"][0]["lastPrice"])
         print("Total Sell Quantity: " + stock_info["data"][0]["totalSellQuantity"])
-        print("Open Price: " + stock_info["data"][0]["open"] + " | Day High: " + stock_info["data"][0]["dayHigh"] + " | Day Low: " + stock_info["data"][0]["dayLow"] + " | Close Price: " + stock_info["data"][0]["closePrice"])
+        print("Open Price: " + stock_info["data"][0]["open"] + " | Day High: " + stock_info["data"][0]["dayHigh"] + " | Day Low: " + stock_info["data"][0]["dayLow"] + " | Close Price: " + stock_info["data"][0]["lastPrice"])
         print("")
         print("Last Updated: " + stock_info["lastUpdateTime"])
 
