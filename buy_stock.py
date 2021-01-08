@@ -21,5 +21,10 @@ def buy_stock(stock):
     # the varibale to profile.json
     profile_data["current-balence"] = str(float(profile_data["current-balence"]) - un_comma(stock_info["data"][0]["lastPrice"]))
     profile_edit = open('profile.json', 'w')
-    profile_edit.write(json.dumps(profile_data))
+    profile_edit.write(json.dumps(profile_data, indent = 4))
+
+    trades_len = len(profile_data["trades"])
+    new_trade = profile_data
+    profile_data.update()
+    profile_edit.write(json.dumps(profile_data, indent = 4))
     profile_edit.close()
