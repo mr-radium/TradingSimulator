@@ -42,7 +42,12 @@ if __name__ == "__main__":
         try:
             arranged_task = task.split()
             stock = arranged_task[1]
-            quantity = arranged_task[2].replace("-", "")
-            buy_stock(stock, quantity)
+            try:
+                quantity = arranged_task[2].replace("-", "")
+                buy_stock(stock, quantity)
+            except:
+                print("Please assign a quantity at last followed by '-'")
+                print("For example- 'buy ONGC -400' or buy 'buy BURGERKING -25'")
         except:
-            print("Something went wrong!")
+            print("Something might be wrong!")
+            print("Please check your internet connection and try again.")
