@@ -22,10 +22,12 @@ def buy_stock(stock, quantity):
         # Now it would overwrite the current-balence with the new balence and then it would overwrite 
         # the varibale to profile.json
         if float(profile_data["current-balence"]) - un_comma(stock_info["data"][0]["lastPrice"]) * float(quantity) < 0:
-            print("Sorry you don't have enough money buy the following stock.")
+            print("")
+            print("You don't have enough money buy the following stock.")
             profile_data["current-balence"] = str(float(profile_data["current-balence"]) - un_comma(stock_info["data"][0]["lastPrice"]) * float(quantity))
 
         else:
+            profile_data["current-balence"] = str(float(profile_data["current-balence"]) - (un_comma(stock_info["data"][0]["lastPrice"])) * float(quantity)) 
             trades_len = len(profile_data["trades"])
             profile_data["trades"].append(
                 {
@@ -51,8 +53,10 @@ def buy_stock(stock, quantity):
             profile_edit.write(json.dumps(profile_data, indent = 4))
             profile_edit.close()
 
-            print("Brought " + stock_info["data"][0]["symbol"] + " at the quantity of" + quantity)
-
+            print("")
+            print("Brought " + quantity + " " +  stock_info["data"][0]["symbol"] + " stocks at each of ₹" + stock_info["data"][0]["lastPrice"])
+            print("Total price deducted from your current balence: ₹" +  str((un_comma(stock_info["data"][0]["lastPrice"])) * float(quantity)))
+            print("Your current balence: ₹" + profile_data["current-balence"])
     except:
         print("Sorry but the stock of your symbol does'nt exist.")
         print("")

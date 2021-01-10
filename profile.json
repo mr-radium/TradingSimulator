@@ -1,23 +1,23 @@
 {
     "username": "Mr. Radium",
-    "current-balence": "1000000.0",
+    "current-balence": "9.467566756777454e+27",
     "trades": [
         {
             "trade-id": "0",
             "trade-status": "buy",
-            "trade-company": "MRF",
-            "trade-price": "81,000.00",
-            "trade-quantity": "20",
-            "total-trade-price": "1620000.0"
+            "trade-company": "ONGC",
+            "trade-price": "100.45",
+            "trade-quantity": "400",
+            "total-trade-price": "40180.0"
         }
     ],
     "bought": [
         {
             "brought-id": "0",
-            "brought-company": "MRF",
-            "brought-price": "81,000.00",
-            "brought-quantity": "20",
-            "total-trade-price": "1620000.0"
+            "brought-company": "ONGC",
+            "brought-price": "100.45",
+            "brought-quantity": "400",
+            "total-trade-price": "40180.0"
         }
     ],
     "sold": [],

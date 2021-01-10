@@ -46,6 +46,7 @@ if __name__ == "__main__":
                 quantity = arranged_task[2].replace("-", "")
                 buy_stock(stock, quantity)
             except:
+                print("")
                 print("Please assign a quantity at last followed by '-'")
                 print("For example- 'buy ONGC -400' or buy 'buy BURGERKING -25'")
         except:
