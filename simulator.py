@@ -1,9 +1,8 @@
-# Importing the functions from the symbol_seacher file
-import os
 from symbol_searcher import sym_search
 from symbol_searcher import print_data
 from get_current_stock_data import get_current_stock_data_nse
 from buy_stock import buy_stock
+from show_profile import show_profile
 
 
 if __name__ == "__main__":
@@ -38,6 +37,9 @@ if __name__ == "__main__":
             print("Something might be wrong!")
             print("Please check your internet connection and try again.")
 
+# If "buy" in task it will buy the stock.
+# The quantity should be assigned followed by "-"
+# Example: "buy ONGC -100"
     if "buy" in task:
         try:
             arranged_task = task.split()
@@ -52,3 +54,6 @@ if __name__ == "__main__":
         except:
             print("Something might be wrong!")
             print("Please check your internet connection and try again.")
+
+    if "-i" in task:
+        show_profile()

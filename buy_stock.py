@@ -32,7 +32,7 @@ def buy_stock(stock, quantity):
             profile_data["trades"].append(
                 {
                     "trade-id": str(trades_len),
-                    "trade-status": "buy",
+                    "trade-status": "bought",
                     "trade-company": stock_info["data"][0]["symbol"],
                     "trade-price": stock_info["data"][0]["lastPrice"],
                     "trade-quantity": quantity,
@@ -41,10 +41,19 @@ def buy_stock(stock, quantity):
             )
             profile_data["bought"].append(
                 {
-                    "brought-id": str(trades_len),
-                    "brought-company": stock_info["data"][0]["symbol"],
-                    "brought-price": stock_info["data"][0]["lastPrice"],
-                    "brought-quantity": quantity,
+                    "bought-id": str(trades_len),
+                    "bought-company": stock_info["data"][0]["symbol"],
+                    "bought-price": stock_info["data"][0]["lastPrice"],
+                    "bought-quantity": quantity,
+                    "total-trade-price": str((un_comma(stock_info["data"][0]["lastPrice"])) * float(quantity))
+                }
+            )
+            profile_data["having"].append(
+                {
+                    "bought-id": str(trades_len),
+                    "bought-company": stock_info["data"][0]["symbol"],
+                    "bought-price": stock_info["data"][0]["lastPrice"],
+                    "bought-quantity": quantity,
                     "total-trade-price": str((un_comma(stock_info["data"][0]["lastPrice"])) * float(quantity))
                 }
             )
