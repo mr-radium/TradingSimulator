@@ -25,7 +25,11 @@ def get_current_stock_data_nse(stock):
     
     if len(stock_info["data"]) == 0:
         print("")
-        print("Sorry, we can't find the status of the following stock symbol.")
+        print("Sorry but the stock of your symbol does'nt exist.")
+        print("")
+        print("You could use our symbol searcher for help!")
+        print("For that just type the company name or symbol followed by ls")
+        print("For example- 'ls Bharat Petroleum' or 'ls BPCL'")
 
     elif market_status["status"] == "closed":
         print("")

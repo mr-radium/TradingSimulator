@@ -1,5 +1,25 @@
 {
     "username": "Mr. Radium",
-    "current-balence": "1000000",
-    "trades": []
+    "current-balence": "-620000.0",
+    "trades": [
+        {
+            "trade-id": "0",
+            "trade-status": "buy",
+            "trade-company": "MRF",
+            "trade-price": "81,000.00",
+            "trade-quantity": "20",
+            "total-trade-price": "1620000.0"
+        }
+    ],
+    "bought": [
+        {
+            "brought-id": "0",
+            "brought-company": "MRF",
+            "brought-price": "81,000.00",
+            "brought-quantity": "20",
+            "total-trade-price": "1620000.0"
+        }
+    ],
+    "sold": [],
+    "having": []
 }
