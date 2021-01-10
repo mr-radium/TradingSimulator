@@ -21,32 +21,37 @@ def buy_stock(stock, quantity):
     try:
         # Now it would overwrite the current-balence with the new balence and then it would overwrite 
         # the varibale to profile.json
-        profile_data["current-balence"] = str(float(profile_data["current-balence"]) - un_comma(stock_info["data"][0]["lastPrice"]) * float(quantity))
+        if float(profile_data["current-balence"]) - un_comma(stock_info["data"][0]["lastPrice"]) * float(quantity) < 0:
+            print("Sorry you don't have enough money buy the following stock.")
+            profile_data["current-balence"] = str(float(profile_data["current-balence"]) - un_comma(stock_info["data"][0]["lastPrice"]) * float(quantity))
 
-        trades_len = len(profile_data["trades"])
-        profile_data["trades"].append(
-            {
-                "trade-id": str(trades_len),
-                "trade-status": "buy",
-                "trade-company": stock_info["data"][0]["symbol"],
-                "trade-price": stock_info["data"][0]["lastPrice"],
-                "trade-quantity": quantity,
-                "total-trade-price": str((un_comma(stock_info["data"][0]["lastPrice"])) * float(quantity))
-            }
-        )
-        profile_data["bought"].append(
-            {
-                "brought-id": str(trades_len),
-                "brought-company": stock_info["data"][0]["symbol"],
-                "brought-price": stock_info["data"][0]["lastPrice"],
-                "brought-quantity": quantity,
-                "total-trade-price": str((un_comma(stock_info["data"][0]["lastPrice"])) * float(quantity))
-            }
-        )
+        else:
+            trades_len = len(profile_data["trades"])
+            profile_data["trades"].append(
+                {
+                    "trade-id": str(trades_len),
+                    "trade-status": "buy",
+                    "trade-company": stock_info["data"][0]["symbol"],
+                    "trade-price": stock_info["data"][0]["lastPrice"],
+                    "trade-quantity": quantity,
+                    "total-trade-price": str((un_comma(stock_info["data"][0]["lastPrice"])) * float(quantity))
+                }
+            )
+            profile_data["bought"].append(
+                {
+                    "brought-id": str(trades_len),
+                    "brought-company": stock_info["data"][0]["symbol"],
+                    "brought-price": stock_info["data"][0]["lastPrice"],
+                    "brought-quantity": quantity,
+                    "total-trade-price": str((un_comma(stock_info["data"][0]["lastPrice"])) * float(quantity))
+                }
+            )
 
-        profile_edit = open('profile.json', 'w')
-        profile_edit.write(json.dumps(profile_data, indent = 4))
-        profile_edit.close()
+            profile_edit = open('profile.json', 'w')
+            profile_edit.write(json.dumps(profile_data, indent = 4))
+            profile_edit.close()
+
+            print("Brought " + stock_info["data"][0]["symbol"] + " at the quantity of" + quantity)
 
     except:
         print("Sorry but the stock of your symbol does'nt exist.")
