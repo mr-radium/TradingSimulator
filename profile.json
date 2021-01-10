@@ -1,6 +1,6 @@
 {
     "username": "Mr. Radium",
-    "current-balence": "9959820.0",
+    "current-balence": "9912780.0",
     "trades": [
         {
             "trade-id": "0",
@@ -9,6 +9,14 @@
             "trade-price": "100.45",
             "trade-quantity": "400",
             "total-trade-price": "40180.0"
+        },
+        {
+            "trade-id": "1",
+            "trade-status": "bought",
+            "trade-company": "INDRAMEDCO",
+            "trade-price": "58.80",
+            "trade-quantity": "800",
+            "total-trade-price": "47040.0"
         }
     ],
     "bought": [
@@ -18,6 +26,13 @@
             "bought-price": "100.45",
             "bought-quantity": "400",
             "total-trade-price": "40180.0"
+        },
+        {
+            "bought-id": "1",
+            "bought-company": "INDRAMEDCO",
+            "bought-price": "58.80",
+            "bought-quantity": "800",
+            "total-trade-price": "47040.0"
         }
     ],
     "sold": [],
@@ -28,6 +43,13 @@
             "bought-price": "100.45",
             "bought-quantity": "400",
             "total-trade-price": "40180.0"
+        },
+        {
+            "bought-id": "1",
+            "bought-company": "INDRAMEDCO",
+            "bought-price": "58.80",
+            "bought-quantity": "800",
+            "total-trade-price": "47040.0"
         }
     ]
 }
