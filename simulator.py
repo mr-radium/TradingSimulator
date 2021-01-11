@@ -3,7 +3,7 @@ from symbol_searcher import print_data
 from get_current_stock_data import get_current_stock_data_nse
 from buy_stock import buy_stock
 from show_profile import show_profile
-
+from sell_stock import  sell_stock
 
 if __name__ == "__main__":
     while True:
@@ -60,6 +60,13 @@ if __name__ == "__main__":
 
         if "-i" in task:
             show_profile()
+
+        if "sell" in task:
+            arranged_task = task.split()
+            stock = arranged_task[1]
+            quantity = arranged_task[2].replace("-", "")
+            sell_stock(stock, quantity)
+
 
         if "-q" in task:
             exit(code=0)
