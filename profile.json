@@ -1,6 +1,6 @@
 {
     "username": "Mr. Radium",
-    "current-balence": "9604480.0",
+    "current-balence": "9372959.5",
     "trades": [
         {
             "trade-id": "0",
@@ -25,6 +25,54 @@
             "trade-price": "58.80",
             "trade-quantity": "800",
             "total-trade-price": "47040.0"
+        },
+        {
+            "trade-id": "3",
+            "trade-status": "bought",
+            "trade-company": "ONGC",
+            "trade-price": "99.95",
+            "trade-quantity": "400",
+            "total-trade-price": "39980.0"
+        },
+        {
+            "trade-id": "4",
+            "trade-status": "bought",
+            "trade-company": "COLPAL",
+            "trade-price": "1,660.95",
+            "trade-quantity": "10",
+            "total-trade-price": "16609.5"
+        },
+        {
+            "trade-id": "5",
+            "trade-status": "bought",
+            "trade-company": "TBZ",
+            "trade-price": "84.75",
+            "trade-quantity": "100",
+            "total-trade-price": "8475.0"
+        },
+        {
+            "trade-id": "6",
+            "trade-status": "bought",
+            "trade-company": "MARICO",
+            "trade-price": "430.20",
+            "trade-quantity": "5",
+            "total-trade-price": "2151.0"
+        },
+        {
+            "trade-id": "7",
+            "trade-status": "bought",
+            "trade-company": "INDTERRAIN",
+            "trade-price": "47.65",
+            "trade-quantity": "1000",
+            "total-trade-price": "47650.0"
+        },
+        {
+            "trade-id": "8",
+            "trade-status": "bought",
+            "trade-company": "HINDALCO",
+            "trade-price": "262.50",
+            "trade-quantity": "100",
+            "total-trade-price": "26250.0"
         }
     ],
     "bought": [
@@ -48,10 +96,52 @@
             "bought-price": "58.80",
             "bought-quantity": "800",
             "total-trade-price": "47040.0"
+        },
+        {
+            "bought-id": "3",
+            "bought-company": "ONGC",
+            "bought-price": "99.95",
+            "bought-quantity": "400",
+            "total-trade-price": "39980.0"
+        },
+        {
+            "bought-id": "4",
+            "bought-company": "COLPAL",
+            "bought-price": "1,660.95",
+            "bought-quantity": "10",
+            "total-trade-price": "16609.5"
+        },
+        {
+            "bought-id": "5",
+            "bought-company": "TBZ",
+            "bought-price": "84.75",
+            "bought-quantity": "100",
+            "total-trade-price": "8475.0"
+        },
+        {
+            "bought-id": "6",
+            "bought-company": "MARICO",
+            "bought-price": "430.20",
+            "bought-quantity": "5",
+            "total-trade-price": "2151.0"
+        },
+        {
+            "bought-id": "7",
+            "bought-company": "INDTERRAIN",
+            "bought-price": "47.65",
+            "bought-quantity": "1000",
+            "total-trade-price": "47650.0"
+        },
+        {
+            "bought-id": "8",
+            "bought-company": "HINDALCO",
+            "bought-price": "262.50",
+            "bought-quantity": "100",
+            "total-trade-price": "26250.0"
         }
     ],
     "sold": [],
-    "having": [
+    "portfolio": [
         {
             "bought-id": "0",
             "bought-company": "ITC",
@@ -72,6 +162,48 @@
             "bought-price": "58.80",
             "bought-quantity": "800",
             "total-trade-price": "47040.0"
+        },
+        {
+            "bought-id": "3",
+            "bought-company": "ONGC",
+            "bought-price": "99.95",
+            "bought-quantity": "400",
+            "total-trade-price": "39980.0"
+        },
+        {
+            "bought-id": "4",
+            "bought-company": "COLPAL",
+            "bought-price": "1,660.95",
+            "bought-quantity": "10",
+            "total-trade-price": "16609.5"
+        },
+        {
+            "bought-id": "5",
+            "bought-company": "TBZ",
+            "bought-price": "84.75",
+            "bought-quantity": "100",
+            "total-trade-price": "8475.0"
+        },
+        {
+            "bought-id": "6",
+            "bought-company": "MARICO",
+            "bought-price": "430.20",
+            "bought-quantity": "5",
+            "total-trade-price": "2151.0"
+        },
+        {
+            "bought-id": "7",
+            "bought-company": "INDTERRAIN",
+            "bought-price": "47.65",
+            "bought-quantity": "1000",
+            "total-trade-price": "47650.0"
+        },
+        {
+            "bought-id": "8",
+            "bought-company": "HINDALCO",
+            "bought-price": "262.50",
+            "bought-quantity": "100",
+            "total-trade-price": "26250.0"
         }
     ]
 }

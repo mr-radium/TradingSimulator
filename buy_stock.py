@@ -48,7 +48,7 @@ def buy_stock(stock, quantity):
                     "total-trade-price": str((un_comma(stock_info["data"][0]["lastPrice"])) * float(quantity))
                 }
             )
-            profile_data["having"].append(
+            profile_data["portfolio"].append(
                 {
                     "bought-id": str(trades_len),
                     "bought-company": stock_info["data"][0]["symbol"],
