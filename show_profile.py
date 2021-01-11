@@ -9,12 +9,11 @@ def show_profile():
     print("Current Balence: " + profile_data["current-balence"])
     print("")
     print("Portfolio")
-    
+
     i = 0
     while i < portfolio_lenght:
         print("")
         print(profile_data["having"][i]["bought-company"])
         print("Bought Price: ₹" + profile_data["having"][i]["bought-price"])
         print("Quantity: " + profile_data["having"][i]["bought-price"])
-        print("")
         i += 1

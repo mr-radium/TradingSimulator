@@ -1,17 +1,25 @@
 {
     "username": "Mr. Radium",
-    "current-balence": "9912780.0",
+    "current-balence": "9604480.0",
     "trades": [
         {
             "trade-id": "0",
             "trade-status": "bought",
-            "trade-company": "ONGC",
-            "trade-price": "100.45",
+            "trade-company": "ITC",
+            "trade-price": "202.10",
             "trade-quantity": "400",
-            "total-trade-price": "40180.0"
+            "total-trade-price": "80840.0"
         },
         {
             "trade-id": "1",
+            "trade-status": "bought",
+            "trade-company": "TATACHEM",
+            "trade-price": "500.30",
+            "trade-quantity": "200",
+            "total-trade-price": "100060.0"
+        },
+        {
+            "trade-id": "2",
             "trade-status": "bought",
             "trade-company": "INDRAMEDCO",
             "trade-price": "58.80",
@@ -22,13 +30,20 @@
     "bought": [
         {
             "bought-id": "0",
-            "bought-company": "ONGC",
-            "bought-price": "100.45",
+            "bought-company": "ITC",
+            "bought-price": "202.10",
             "bought-quantity": "400",
-            "total-trade-price": "40180.0"
+            "total-trade-price": "80840.0"
         },
         {
             "bought-id": "1",
+            "bought-company": "TATACHEM",
+            "bought-price": "500.30",
+            "bought-quantity": "200",
+            "total-trade-price": "100060.0"
+        },
+        {
+            "bought-id": "2",
             "bought-company": "INDRAMEDCO",
             "bought-price": "58.80",
             "bought-quantity": "800",
@@ -39,13 +54,20 @@
     "having": [
         {
             "bought-id": "0",
-            "bought-company": "ONGC",
-            "bought-price": "100.45",
+            "bought-company": "ITC",
+            "bought-price": "202.10",
             "bought-quantity": "400",
-            "total-trade-price": "40180.0"
+            "total-trade-price": "80840.0"
         },
         {
             "bought-id": "1",
+            "bought-company": "TATACHEM",
+            "bought-price": "500.30",
+            "bought-quantity": "200",
+            "total-trade-price": "100060.0"
+        },
+        {
+            "bought-id": "2",
             "bought-company": "INDRAMEDCO",
             "bought-price": "58.80",
             "bought-quantity": "800",
