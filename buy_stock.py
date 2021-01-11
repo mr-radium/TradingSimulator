@@ -67,8 +67,4 @@ def buy_stock(stock, quantity):
             print("Total price deducted from your current balence: ₹" +  str((un_comma(stock_info["data"][0]["lastPrice"])) * float(quantity)))
             print("Your current balence: ₹" + profile_data["current-balence"])
     except:
-        print("Sorry but the stock of your symbol does'nt exist.")
-        print("")
-        print("You could use our symbol searcher for help!")
-        print("For that just type the company name or symbol followed by ls")
-        print("For example- 'ls Bharat Petroleum' or 'ls BPCL'")
+        pass
