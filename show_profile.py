@@ -17,3 +17,4 @@ def show_profile():
         print("Bought Price: ₹" + profile_data["portfolio"][i]["bought-price"])
         print("Quantity: " + profile_data["portfolio"][i]["bought-price"])
         i += 1
+        

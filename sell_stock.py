@@ -3,18 +3,15 @@ import json
 
 def sell_stock(stock):
     stock = stock.upper()
+
+    if "&" in stock:
+        stock = stock.replace("&", "%26")
     
-    if "&" in keywords:
-        keywords = keywords.replace("&", "%26")
-    
-    if " " in keywords:
-        keywords = keywords.replace(" ", "%20")
+    if " " in stock:
+        stock = stock.replace(" ", "%20")
     
     profile_data = json.loads(open("profile.json",).read())
     portfolio_lenght = len(profile_data["portfolio"])
 
-    i = 0
-    while i < portfolio_lenght:
-        if stock in profile_data["portfolio"][i]["bought-company"]:
-            print("found it")
-            i += 1
+    if stock in profile_data["portfolio"][0]["bought-company"]:
+        print(profile_data["portfolio"][0]["bought-company"])
