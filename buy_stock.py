@@ -7,6 +7,13 @@ from get_current_stock_data import get_current_stock_data_nse
 
 def buy_stock(stock, quantity):
     stock = stock.upper()
+
+    if "&" in keywords:
+        keywords = keywords.replace("&", "%26")
+    
+    if " " in keywords:
+        keywords = keywords.replace(" ", "%20")
+        
     # First it would get the stock data from NSE
     get_current_stock_data_nse(stock)
 

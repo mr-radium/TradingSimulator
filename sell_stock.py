@@ -3,6 +3,13 @@ import json
 
 def sell_stock(stock):
     stock = stock.upper()
+    
+    if "&" in keywords:
+        keywords = keywords.replace("&", "%26")
+    
+    if " " in keywords:
+        keywords = keywords.replace(" ", "%20")
+    
     profile_data = json.loads(open("profile.json",).read())
     portfolio_lenght = len(profile_data["portfolio"])
 
