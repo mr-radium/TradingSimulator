@@ -1,8 +1,6 @@
 import requests
 import json
 
-# URL (http://localhost:3000/nse/get_quote_info?companyName=ONGC)
-
 def get_current_stock_data_nse(stock):
 
     stock = stock.upper()
