@@ -54,7 +54,7 @@ if __name__ == "__main__":
                     print("")
                     print("Please assign a quantity at last followed by '-'")
                     print("For example- 'buy ONGC -400' or buy 'buy BURGERKING -25'")
-            except:
+            except Exception as e:
                 print("Something might be wrong!")
                 print("Please check your internet connection and try again.")
 

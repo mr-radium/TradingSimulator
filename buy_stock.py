@@ -8,11 +8,11 @@ from get_current_stock_data import get_current_stock_data_nse
 def buy_stock(stock, quantity):
     stock = stock.upper()
 
-    if "&" in keywords:
-        keywords = keywords.replace("&", "%26")
+    if "&" in stock:
+        stock = stock.replace("&", "%26")
     
-    if " " in keywords:
-        keywords = keywords.replace(" ", "%20")
+    if " " in stock:
+        stock = stock.replace(" ", "%20")
         
     # First it would get the stock data from NSE
     get_current_stock_data_nse(stock)
@@ -31,7 +31,6 @@ def buy_stock(stock, quantity):
         if float(profile_data["current-balence"]) - un_comma(stock_info["data"][0]["lastPrice"]) * float(quantity) < 0:
             print("")
             print("You don't have enough money buy the following stock.")
-            profile_data["current-balence"] = str(float(profile_data["current-balence"]) - un_comma(stock_info["data"][0]["lastPrice"]) * float(quantity))
 
         else:
             profile_data["current-balence"] = str(float(profile_data["current-balence"]) - (un_comma(stock_info["data"][0]["lastPrice"])) * float(quantity)) 
@@ -70,7 +69,7 @@ def buy_stock(stock, quantity):
             profile_edit.close()
 
             print("")
-            print("Brought " + quantity + " " +  stock_info["data"][0]["symbol"] + " stocks at each of ₹" + stock_info["data"][0]["lastPrice"])
+            print("Bought " + quantity + " " +  stock_info["data"][0]["symbol"] + " stocks at each of ₹" + stock_info["data"][0]["lastPrice"])
             print("Total price deducted from your current balence: ₹" +  str((un_comma(stock_info["data"][0]["lastPrice"])) * float(quantity)))
             print("Your current balence: ₹" + profile_data["current-balence"])
     except:

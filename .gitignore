@@ -2,6 +2,8 @@
 __pycache__/
 .idea/
 
+.vscode/
+
 # Files for test purposes
 test.json
 notes.txt

@@ -13,5 +13,3 @@ def sell_stock(stock):
     profile_data = json.loads(open("profile.json",).read())
     portfolio_lenght = len(profile_data["portfolio"])
 
-    if stock in profile_data["portfolio"][0]["bought-company"]:
-        print(profile_data["portfolio"][0]["bought-company"])
