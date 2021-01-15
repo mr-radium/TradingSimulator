@@ -29,12 +29,21 @@ def show_profile():
             print(profile_data["portfolio"][i]["bought-company"])
             print("Bought Price: ₹" + profile_data["portfolio"][i]["bought-price"])
             print("Quantity: " + profile_data["portfolio"][i]["bought-quantity"])
-            print("+" + str(un_comma(stock_info["data"][0]["lastPrice"]) * bought_quantity - total_bought_price))
-        else:
+            limited_float_profit = "{:.2f}".format(str(un_comma(stock_info["data"][0]["lastPrice"]) * bought_quantity - total_bought_price))
+            print("\033[31m" + "+" + limited_float_profit)
+            print("\033[39m")
+
+        if un_comma(profile_data["portfolio"][i]["bought-price"]) > un_comma(stock_info["data"][0]["lastPrice"]):
             print("")
             print(profile_data["portfolio"][i]["bought-company"])
             print("Bought Price: ₹" + profile_data["portfolio"][i]["bought-price"])
-            print("Quantity: " + profile_data["portfolio"][i]["bought-quantity"])        
+            print("Quantity: " + profile_data["portfolio"][i]["bought-quantity"])
+            limited_float_loss = "{:.2f}".format(total_bought_price - un_comma(stock_info["data"][0]["lastPrice"]) * bought_quantity)      
+            print("\033[31m" + "-" + limited_float_loss)
+            print("\033[39m")
+
+        else:
+            print("No function for this, haha!")
             
         i += 1
 
