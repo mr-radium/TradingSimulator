@@ -28,12 +28,12 @@ def buy_stock(stock, quantity):
     try:
         # Now it would overwrite the current-balence with the new balence and then it would overwrite 
         # the varibale to profile.json
-        if float(profile_data["current-balence"]) - un_comma(stock_info["data"][0]["lastPrice"]) * float(quantity) < 0:
+        if un_comma(profile_data["current-balence"]) - un_comma(stock_info["data"][0]["lastPrice"]) * un_comma(quantity) < 0:
             print("")
             print("You don't have enough money buy the following stock.")
 
         else:
-            profile_data["current-balence"] = str(float(profile_data["current-balence"]) - (un_comma(stock_info["data"][0]["lastPrice"])) * float(quantity)) 
+            profile_data["current-balence"] = str(un_comma(profile_data["current-balence"]) - (un_comma(stock_info["data"][0]["lastPrice"])) * un_comma(quantity)) 
             trades_len = len(profile_data["trades"])
             profile_data["trades"].append(
                 {
@@ -42,7 +42,7 @@ def buy_stock(stock, quantity):
                     "trade-company": stock_info["data"][0]["symbol"],
                     "trade-price": stock_info["data"][0]["lastPrice"],
                     "trade-quantity": quantity,
-                    "total-trade-price": str((un_comma(stock_info["data"][0]["lastPrice"])) * float(quantity))
+                    "total-trade-price": str((un_comma(stock_info["data"][0]["lastPrice"])) * un_comma(quantity))
                 }
             )
             profile_data["bought"].append(
@@ -51,7 +51,7 @@ def buy_stock(stock, quantity):
                     "bought-company": stock_info["data"][0]["symbol"],
                     "bought-price": stock_info["data"][0]["lastPrice"],
                     "bought-quantity": quantity,
-                    "total-trade-price": str((un_comma(stock_info["data"][0]["lastPrice"])) * float(quantity))
+                    "total-trade-price": str((un_comma(stock_info["data"][0]["lastPrice"])) * un_comma(quantity))
                 }
             )
             profile_data["portfolio"].append(
@@ -60,7 +60,7 @@ def buy_stock(stock, quantity):
                     "bought-company": stock_info["data"][0]["symbol"],
                     "bought-price": stock_info["data"][0]["lastPrice"],
                     "bought-quantity": quantity,
-                    "total-trade-price": str((un_comma(stock_info["data"][0]["lastPrice"])) * float(quantity))
+                    "total-trade-price": str((un_comma(stock_info["data"][0]["lastPrice"])) * un_comma(quantity))
                 }
             )
 
@@ -70,7 +70,7 @@ def buy_stock(stock, quantity):
 
             print("")
             print("Bought " + quantity + " " +  stock_info["data"][0]["symbol"] + " stocks at each of ₹" + stock_info["data"][0]["lastPrice"])
-            print("Total price deducted from your current balence: ₹" +  str((un_comma(stock_info["data"][0]["lastPrice"])) * float(quantity)))
+            print("Total price deducted from your current balence: ₹" +  str((un_comma(stock_info["data"][0]["lastPrice"])) * un_comma(quantity)))
             print("Your current balence: ₹" + profile_data["current-balence"])
     except:
         pass
