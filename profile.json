@@ -1,6 +1,6 @@
 {
     "username": "Mr. Radium",
-    "current-balence": "817005.1",
+    "current-balence": "530797.1",
     "trades": [
         {
             "trade-id": "0",
@@ -17,6 +17,14 @@
             "trade-price": "105.50",
             "trade-quantity": "900",
             "total-trade-price": "94950.0"
+        },
+        {
+            "trade-id": "2",
+            "trade-status": "bought",
+            "trade-company": "LT",
+            "trade-price": "1,357.20",
+            "trade-quantity": "90",
+            "total-trade-price": "122148.0"
         }
     ],
     "bought": [
@@ -33,6 +41,13 @@
             "bought-price": "105.50",
             "bought-quantity": "900",
             "total-trade-price": "94950.0"
+        },
+        {
+            "bought-id": "2",
+            "bought-company": "LT",
+            "bought-price": "1,357.20",
+            "bought-quantity": "90",
+            "total-trade-price": "122148.0"
         }
     ],
     "sold": [],
@@ -50,6 +65,13 @@
             "bought-price": "105.50",
             "bought-quantity": "900",
             "total-trade-price": "94950.0"
+        },
+        {
+            "bought-id": "2",
+            "bought-company": "LT",
+            "bought-price": "1,357.20",
+            "bought-quantity": "90",
+            "total-trade-price": "122148.0"
         }
     ]
 }
