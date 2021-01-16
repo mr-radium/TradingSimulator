@@ -57,7 +57,7 @@ def show_profile():
             print("Quantity: " + profile_data["portfolio"][i]["bought-quantity"])
 
             # This thing prints the profit in green color  
-            print("\033[32m" + "+00")
+            print("\033[32m" + "+0.00")
             print("\033[39m")
         i += 1
 
