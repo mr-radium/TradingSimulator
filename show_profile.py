@@ -4,8 +4,10 @@ from utilities import un_comma
 
 def show_profile():
     profile_data = json.loads(open('profile.json',).read())
-    portfolio_lenght = len(profile_data["portfolio"])
-
+    portfolio_length = len(profile_data["portfolio"])
+    portfolio_value = 0.0
+    portfolio_profit = 0.0
+    portfolio_loss = 0.0
 
     print("")
     print(profile_data["username"] + ',')
@@ -14,7 +16,7 @@ def show_profile():
     print("Portfolio")
 
     i = 0
-    while i < portfolio_lenght:
+    while i < portfolio_length:
 
         stock = profile_data["portfolio"][i]["bought-company"]
         res = requests.get("http://localhost:3000/nse/get_quote_info?companyName=" + stock)
@@ -24,9 +26,6 @@ def show_profile():
         bought_quantity = un_comma(profile_data["portfolio"][i]["bought-quantity"])
         total_bought_price = bought_price * bought_quantity
 
-        global portfolio_value
-        portfolio_value = 0.0
-
         if un_comma(profile_data["portfolio"][i]["bought-price"]) < un_comma(stock_info["data"][0]["lastPrice"]):
             print("")
             print(profile_data["portfolio"][i]["bought-company"])
@@ -35,8 +34,10 @@ def show_profile():
 
             # This variable limits the amount of digits after the decimal            
             limited_float_profit = "{:.2f}".format(un_comma(stock_info["data"][0]["lastPrice"]) * bought_quantity - total_bought_price)
-            
+
             portfolio_value += float(limited_float_profit)
+            print(portfolio_value)
+
             # This thing prints the profit in green color  
             print("\033[32m" + "+" + limited_float_profit)
             print("\033[39m")
@@ -49,9 +50,6 @@ def show_profile():
 
             # This variable limits the amount of digits after the decimal
             limited_float_loss = "{:.2f}".format(total_bought_price - un_comma(stock_info["data"][0]["lastPrice"]) * bought_quantity)    
-
-            portfolio_value =- float(limited_float_loss)
-            print(portfolio_value)
 
             # This thing prints the loss in red color  
             print("\033[31m" + "-" + limited_float_loss)
@@ -69,8 +67,3 @@ def show_profile():
 
         
         i += 1
-
-    return portfolio_value  
-
-
-    
