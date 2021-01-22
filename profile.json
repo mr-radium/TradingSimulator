@@ -1,6 +1,6 @@
 {
     "username": "Mr. Radium",
-    "current-balence": "511127.1",
+    "current-balence": "349922.1",
     "trades": [
         {
             "trade-id": "0",
@@ -33,6 +33,14 @@
             "trade-price": "98.35",
             "trade-quantity": "200",
             "total-trade-price": "19670.0"
+        },
+        {
+            "trade-id": "4",
+            "trade-status": "bought",
+            "trade-company": "M&M",
+            "trade-price": "805.65",
+            "trade-quantity": "100",
+            "total-trade-price": "80565.0"
         }
     ],
     "bought": [
@@ -63,6 +71,13 @@
             "bought-price": "98.35",
             "bought-quantity": "200",
             "total-trade-price": "19670.0"
+        },
+        {
+            "bought-id": "4",
+            "bought-company": "M&M",
+            "bought-price": "805.65",
+            "bought-quantity": "100",
+            "total-trade-price": "80565.0"
         }
     ],
     "sold": [],
@@ -94,6 +109,13 @@
             "bought-price": "98.35",
             "bought-quantity": "200",
             "total-trade-price": "19670.0"
+        },
+        {
+            "bought-id": "4",
+            "bought-company": "M&M",
+            "bought-price": "805.65",
+            "bought-quantity": "100",
+            "total-trade-price": "80565.0"
         }
     ]
 }

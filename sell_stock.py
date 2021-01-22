@@ -10,6 +10,3 @@ def sell_stock(stock):
     if " " in stock:
         stock = stock.replace(" ", "%20")
     
-    profile_data = json.loads(open("profile.json",).read())
-    portfolio_lenght = len(profile_data["portfolio"])
-

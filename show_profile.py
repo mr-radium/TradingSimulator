@@ -19,6 +19,10 @@ def show_profile():
     while i < portfolio_length:
 
         stock = profile_data["portfolio"][i]["bought-company"]
+
+        if "&" in stock:
+            stock = stock.replace("&", "%26")
+            
         res = requests.get("http://localhost:3000/nse/get_quote_info?companyName=" + stock)
         stock_info = json.loads(res.text)
 

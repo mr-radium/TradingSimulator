@@ -33,6 +33,9 @@ def buy_stock(stock, quantity):
             print("You don't have enough money buy the following stock.")
 
         else:
+            if "&amp;" in stock_info["data"][0]["symbol"]:
+                stock_info["data"][0]["symbol"] = stock_info["data"][0]["symbol"].replace("&amp;", "&")
+                
             profile_data["current-balence"] = str(un_comma(profile_data["current-balence"]) - (un_comma(stock_info["data"][0]["lastPrice"])) * un_comma(quantity)) 
             trades_len = len(profile_data["trades"])
             profile_data["trades"].append(
