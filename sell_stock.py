@@ -7,6 +7,4 @@ def sell_stock(stock):
     if "&" in stock:
         stock = stock.replace("&", "%26")
     
-    if " " in stock:
-        stock = stock.replace(" ", "%20")
     
