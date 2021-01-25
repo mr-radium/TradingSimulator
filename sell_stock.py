@@ -1,4 +1,3 @@
-from os import set_blocking
 import requests
 import json
 
