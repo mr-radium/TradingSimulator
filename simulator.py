@@ -62,8 +62,7 @@ if __name__ == "__main__":
             show_profile()
 
         if "sell" in task:
-            stock = task.replace("sell ", "")
-            sell_stock(stock)
+            sell_stock()
 
         if "-q" in task:
             exit(code=0)

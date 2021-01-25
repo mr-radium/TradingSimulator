@@ -4,11 +4,7 @@ import json
 
 from utilities import un_comma
 
-def sell_stock(stock):
-    stock = stock.upper()
-
-    if "&" in stock:
-        stock = stock.replace("&", "%26")
+def sell_stock():
     
     profile_data = json.loads(open('profile.json',).read())
     portfolio_length = len(profile_data["portfolio"])
@@ -34,7 +30,7 @@ def sell_stock(stock):
 
         if un_comma(profile_data["portfolio"][i]["bought-price"]) < un_comma(stock_info["data"][0]["lastPrice"]):
             print("")
-            print(profile_data["portfolio"][i]["bought-company"])
+            print(profile_data["portfolio"][i]["bought-company"] + f" [{stock_index}]")
             print("Bought Price: ₹" + profile_data["portfolio"][i]["bought-price"])
             print("Quantity: " + profile_data["portfolio"][i]["bought-quantity"])
 
@@ -50,7 +46,7 @@ def sell_stock(stock):
 
         if un_comma(profile_data["portfolio"][i]["bought-price"]) > un_comma(stock_info["data"][0]["lastPrice"]):
             print("")
-            print(profile_data["portfolio"][i]["bought-company"])
+            print(profile_data["portfolio"][i]["bought-company"] + f" [{stock_index}]")
             print("Bought Price: ₹" + profile_data["portfolio"][i]["bought-price"])
             print("Quantity: " + profile_data["portfolio"][i]["bought-quantity"])
 
@@ -66,7 +62,7 @@ def sell_stock(stock):
 
         if un_comma(profile_data["portfolio"][i]["bought-price"]) == un_comma(stock_info["data"][0]["lastPrice"]):
             print("")
-            print(profile_data["portfolio"][i]["bought-company"])
+            print(profile_data["portfolio"][i]["bought-company"] + f" [{stock_index}]")
             print("Bought Price: ₹" + profile_data["portfolio"][i]["bought-price"])
             print("Quantity: " + profile_data["portfolio"][i]["bought-quantity"])
 
@@ -74,6 +70,5 @@ def sell_stock(stock):
             print("\033[32m" + "+0.00")
             print("\033[39m")
 
-      
         i += 1
         stock_index += 1
